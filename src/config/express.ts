@@ -10,7 +10,7 @@ app.use(
     })
 );
 
-app.use(bodyParser.urlencoded({extend: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json({limit: '20mb'}));
 
 app.get('/', (req, res) => {
